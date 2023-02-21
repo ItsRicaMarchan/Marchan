@@ -94,6 +94,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "marchan:build:production",
+            "firebaseProject": "rica-89518",
+            "firebaseHostingSite": "rica-89518"
+          }
         }
       }
     }

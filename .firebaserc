@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "rica-89518": {
+      "hosting": {
+        "marchan": [
+          "rica-89518"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "rica-89518"
+  }
+}
