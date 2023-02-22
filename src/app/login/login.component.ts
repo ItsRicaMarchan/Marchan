@@ -43,11 +43,11 @@ loginUser(value: any) {
      //});
     //read user
 
-     //const starCountRef = ref(this.database, 'users/' + value.email);
-   // onValue(starCountRef, (snapshot) => {
-   //  const data = snapshot.val();
+    //const starCountRef = ref(this.database, 'users/' + value.email);
+    //onValue(starCountRef, (snapshot) => {
+   //const data = snapshot.val();
    
-    // alert(data.email);
+    //alert(data.email);
    
       //update user
 
@@ -61,7 +61,5 @@ loginUser(value: any) {
 remove(ref(this.database, 'users/' + value.email));
 alert('Successfully Removed');
 
-
-
-}
-}
+    }
+  }
