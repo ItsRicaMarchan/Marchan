@@ -15,7 +15,29 @@ export class LoginComponent implements OnInit{
   ngOnInit(): void {
   }
 
-loginUser(value: any) {
+  data = "";
+  loginUser(value: any){   
+     const starCountRef = ref(this.database, 'users/' + value.email);
+  onValue(starCountRef, (snapshot) => {
+   const db = snapshot.val();  
+this.data = db.password;
+
+   }); 
+   if (this.data == value.password){
+    const date = new Date();
+update(ref(this.database, 'users/' + value.email),{
+last_login:date
+} );
+
+
+this.router.navigate(['/display'])
+}else{
+alert('wrong credential!');
+}
+  }
+
+}
+
 
     //login 
        //  signInWithEmailAndPassword(this.auth, value.email, value.password)
@@ -58,8 +80,8 @@ loginUser(value: any) {
 
 //remove user
 
-remove(ref(this.database, 'users/' + value.email));
-alert('Successfully Removed');
+// remove(ref(this.database, 'users/' + value.email));
+// alert('Successfully Removed');
 
-    }
-  }
+//     }
+//   }

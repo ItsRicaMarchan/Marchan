@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { PostComponent } from './post/post.component';
+
 
 
 
@@ -21,6 +23,8 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
     SignUpComponent,
     LoginComponent,
     DashboardComponent,
+    PostComponent,
+
 
    
     
