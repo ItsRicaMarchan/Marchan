@@ -13,6 +13,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { PostComponent } from './post/post.component';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+
 
 
 
@@ -24,6 +26,7 @@ import { PostComponent } from './post/post.component';
     LoginComponent,
     DashboardComponent,
     PostComponent,
+    
 
 
    
@@ -38,6 +41,7 @@ import { PostComponent } from './post/post.component';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore()),
   
   ],
   providers: [],

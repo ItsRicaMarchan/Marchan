@@ -6,9 +6,16 @@
           "rica-89518"
         ]
       }
+    },
+    "marchan-51a09": {
+      "hosting": {
+        "marchan": [
+          "marchan-51a09"
+        ]
+      }
     }
   },
   "projects": {
-    "default": "rica-89518"
+    "default": "marchan-51a09"
   }
 }

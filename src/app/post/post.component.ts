@@ -9,30 +9,58 @@ import { Database,remove,ref,update, onValue, set} from '@angular/fire/database'
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
+  name =  sessionStorage.getItem('id');
+  data = "";
+  names = "";
+  sent = true;
   users!: Observable<any[]>;
   constructor(public database: Database, private FireDb: AngularFireDatabase) {
-  this.users = FireDb.list('/post').valueChanges();}
+  this.users = FireDb.list('/post').valueChanges();
 
-  ngOnInit(): void {
+  const starCountRef = ref(this.database, 'users/' + this.names);
+    onValue(starCountRef, (snapshot) => {
+     const db = snapshot.val();  
+    this.names = db.names;
+
+});
+
+
+if(this.names != ""){
+this.sent = true;
+}else if(this.names == ""){
+  this.sent = false;
   }
 
-name =  sessionStorage.getItem('id');
+}
+
+  ngOnInit(): void {
+   
+  
+    
+  }
+
+
 
 post = "";
-postid = "";
-    posts(value:any){
-      this.postid = "post" +Math.floor(100000 + Math.random() * 900000);
-      set(ref(this.database, 'post/' + this.postid), {   
-          name: value.name,
-          post: value.post
+uid = "";
+    posted(value:any){
+      this.uid = "post" + Math.floor(100000 + Math.random() * 900000);
+      set(ref(this.database, 'post/' + this.uid), {   
+          names: value.names,
+          post: value.post,
+          id: this.uid
    
          }); 
          alert('Posted!');
 
         this.post = "";
         }
+
         del(value: any){
-          remove(ref(this.database, 'users/' + value));
+          remove(ref(this.database, 'post/' + value));
           alert('Deleted Successfully')
+        }
+        logout(){
+          sessionStorage.clear();
         }
        }
