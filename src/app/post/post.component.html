@@ -1,5 +1,5 @@
 <div class="container">
-    <form #registerForm="ngForm" class="center" (ngSubmit)="posts(registerForm.value)">
+    <form #registerForm="ngForm" class="center" (ngSubmit)="postna(registerForm.value)">
         
         <input type="text" [(ngModel)]="name" read-only ngModel name="name" id="name" placeholder="Enter Your Name"><br><br>
         <textarea type="text" class="textarea" ngModel [(ngModel)]="post" name="post" id="post" placeholder="post"></textarea><br><br>

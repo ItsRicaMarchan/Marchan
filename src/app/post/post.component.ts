@@ -20,14 +20,16 @@ name =  sessionStorage.getItem('id');
 
 post = "";
 postid = "";
-    posts(value:any){
-      this.postid = "post" +Math.floor(100000 + Math.random() * 900000);
-      set(ref(this.database, 'post/' + this.postid), {   
-          name: value.name,
-          post: value.post
-   
-         }); 
-         alert('Posted!');
+postna(value:any){
+  this.postid = "post" +Math.floor(100000 + Math.random() * 900000);
+  set(ref(this.database, 'test/' + this.postid), {   
+      name: value.name,
+      post: value.post
+
+     }); 
+     alert('Posted!');
+
+      
 
         this.post = "";
         }
