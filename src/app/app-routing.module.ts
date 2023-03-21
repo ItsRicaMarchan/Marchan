@@ -8,10 +8,11 @@ import {PostComponent} from './post/post.component';
 
 
 
+
 const routes: Routes = [
   {path: 'signup' , component: SignUpComponent},
+  {path: 'login' , component: LoginComponent},
   {path: 'post', component: PostComponent},
-  {path: 'loger' , component: LoginComponent},
   {path: '', redirectTo: 'register', pathMatch: 'full'},
   {path: 'dashboard' , component: DashboardComponent},
  

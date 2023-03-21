@@ -4,14 +4,14 @@
 
 export const environment = {
   firebase: {
-    apiKey: "AIzaSyCz5MjBkSH-uf7i4zXbqrNRtelL__wBrMk",
-  authDomain: "rica-89518.firebaseapp.com",
-  databaseURL: "https://rica-89518-default-rtdb.firebaseio.com",
-  projectId: "rica-89518",
-  storageBucket: "rica-89518.appspot.com",
-  messagingSenderId: "807844893436",
-  appId: "1:807844893436:web:386cd5a5b2e1bafc25fd79",
-  measurementId: "G-DJ354JVVJX"
+    projectId: 'marchan-51a09',
+    appId: '1:680548036042:web:6f9090295cdeea3f193333',
+    databaseURL: 'https://marchan-51a09-default-rtdb.firebaseio.com',
+    storageBucket: 'marchan-51a09.appspot.com',
+    apiKey: 'AIzaSyB9fgCzWLlE8BoUGBZ1hb8WP14kZMHnSHU',
+    authDomain: 'marchan-51a09.firebaseapp.com',
+    messagingSenderId: '680548036042',
+    measurementId: 'G-P4ZYWC61FK',
   },
   production: false
 };
