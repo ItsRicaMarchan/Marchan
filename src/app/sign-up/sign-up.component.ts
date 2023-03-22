@@ -41,7 +41,6 @@ registerUser(value: any) {
         this.uid = "user" +Math.floor(100000 + Math.random() * 900000);
         set(ref(this.database, 'users/' + value.email), {
       id: this.uid,
-      username: value.username,
       email: value.email,
       password: value.password,
   

@@ -101,8 +101,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "marchan:build:production",
-            "firebaseProject": "marchan-51a09",
-            "firebaseHostingSite": "marchan-51a09"
+            "firebaseProject": "marchan-34ebe",
+            "firebaseHostingSite": "marchan-34ebe"
           }
         }
       }

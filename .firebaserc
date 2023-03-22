@@ -1,9 +1,9 @@
 {
   "targets": {
-    "rica-89518": {
+    "marchan-34ebe": {
       "hosting": {
         "marchan": [
-          "rica-89518"
+          "marchan-34ebe"
         ]
       }
     },
@@ -13,9 +13,16 @@
           "marchan-51a09"
         ]
       }
+    },
+    "marchan-34ebe": {
+      "hosting": {
+        "marchan": [
+          "marchan-34ebe"
+        ]
+      }
     }
   },
   "projects": {
-    "default": "marchan-51a09"
+    "default": "marchan-34ebe"
   }
 }

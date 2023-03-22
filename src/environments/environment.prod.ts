@@ -1,13 +1,13 @@
 export const environment = {
   firebase: {
-    projectId: 'marchan-51a09',
-    appId: '1:680548036042:web:6f9090295cdeea3f193333',
-    databaseURL: 'https://marchan-51a09-default-rtdb.firebaseio.com',
-    storageBucket: 'marchan-51a09.appspot.com',
-    apiKey: 'AIzaSyB9fgCzWLlE8BoUGBZ1hb8WP14kZMHnSHU',
-    authDomain: 'marchan-51a09.firebaseapp.com',
-    messagingSenderId: '680548036042',
-    measurementId: 'G-P4ZYWC61FK',
+     apiKey: "AIzaSyAtpUbjpB8SnHtTAfq11T6LnPiY9CKk3gc",
+    authDomain: "marchan-34ebe.firebaseapp.com",
+    databaseURL: "https://marchan-34ebe-default-rtdb.firebaseio.com",
+    projectId: "marchan-34ebe",
+    storageBucket: "marchan-34ebe.appspot.com",
+    messagingSenderId: "85664544998",
+    appId: "1:85664544998:web:6915100d8865e4cd8a6327",
+    measurementId: "G-V9B89EJGT3"
   },
   production: true
 };

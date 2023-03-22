@@ -9,12 +9,6 @@
     </div>
     
     <div class="container" *ngFor="let userss of users | async;let i = index">
-    
-    <h1><b> {{userss.names}}</b></h1>
-    <p class="center">{{userss.post}}</p>
-    <td  class="high"><button class="btn-primary" *ngIf="this.name == userss.names"  (click)="del(userss.id)">Delete</button>
-    </div>
-    <div class="container" *ngFor="let userss of users | async;let i = index">
         <div *ngIf="name!='admin'">
     <h1><b> {{userss.names}}</b></h1>
     <p class="center">{{userss.post}}</p>
